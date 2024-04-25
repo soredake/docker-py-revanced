@@ -28,9 +28,6 @@ on:
         description: "Apps to be patched. Overrides any env set"
         required: false
         type: string
-  # every day at 12:OO
-  schedule:
-    - cron: "0 12 * * *"
 
 jobs:
   build-apk:

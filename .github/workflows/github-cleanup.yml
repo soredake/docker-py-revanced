@@ -6,9 +6,9 @@ on:
       GH_TOKEN:
         required: true
   workflow_dispatch:
-  # every day at 9:OO
+  # every day at 11:OO
   schedule:
-    - cron: "0 9 * * *"
+    - cron: "0 11 * * *"
 
 jobs:
   cleanup:
