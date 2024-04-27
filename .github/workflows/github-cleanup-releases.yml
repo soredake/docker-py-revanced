@@ -1,0 +1,25 @@
+name: GitHub Cleanup
+
+on:
+  workflow_call:
+    secrets:
+      GH_TOKEN:
+        required: true
+  workflow_dispatch:
+  # every day at 11:OO
+  schedule:
+    - cron: "0 11 * * *"
+
+jobs:
+  releases-cleanup:
+    name: GitHub Releases Cleaner
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete older releases
+        uses: dev-drprasad/delete-older-releases@v0.3.3
+        with:
+          repo: ${{ github.repository }} # Use the current repository
+          keep_latest: 3
+          delete_tag_pattern: ''
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
