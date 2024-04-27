@@ -1,4 +1,4 @@
-name: GitHub Cleanup
+name: GitHub Releases Cleanup
 
 on:
   workflow_call:
@@ -20,6 +20,6 @@ jobs:
         with:
           repo: ${{ github.repository }} # Use the current repository
           keep_latest: 3
-          delete_tag_pattern: ''
+          delete_tag_pattern: ""
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
