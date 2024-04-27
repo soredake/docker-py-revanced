@@ -98,7 +98,7 @@ on:
         type: string
   # every day at 12:OO
   schedule:
-    - cron: "0 12 * * *"
+    - cron: '0 12 * * *'
 
 concurrency:
   group: ${{ github.head_ref || github.run_id }}
