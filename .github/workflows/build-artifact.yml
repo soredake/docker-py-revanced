@@ -21,7 +21,7 @@ on:
         default: true
       DEBUG_ENABLED:
         type: boolean
-        description: "Run the build with tmate debugging enabled."
+        description: 'Run the build with tmate debugging enabled.'
         required: false
         default: false
       PREFERRED_PATCH_APPS:
@@ -48,7 +48,7 @@ jobs:
       - name: Setup python
         uses: actions/setup-python@main
         with:
-          python-version: "3.12.3"
+          python-version: '3.12.3'
 
       - name: Install Requirements
         if: ${{ inputs.PREFERRED_PATCH_APPS }}
@@ -95,6 +95,7 @@ jobs:
           fi
           echo "${updated_json}" > "${path}"
 
+
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@master
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.DEBUG_ENABLED }}
@@ -127,6 +128,6 @@ jobs:
         with:
           branch: changelogs
           skip_checkout: true
-          file_pattern: "changelog.md changelog.json updates.json"
+          file_pattern: 'changelog.md changelog.json updates.json'
           commit_message: 🚀New Build
-          push_options: "--force"
+          push_options: '--force'
