@@ -96,8 +96,9 @@ on:
         description: "Apps to be patched. Overrides any env set"
         required: false
         type: string
+  # At 16:00 on Saturday
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "0 16 * * 6"
 
 concurrency:
   group: ${{ github.head_ref || github.run_id }}
@@ -106,6 +107,9 @@ jobs:
   build-apk:
     uses: ./.github/workflows/build-artifact.yml
     with:
+      # I've changed this variables because of this bug:
+      # https://github.com/actions/runner/issues/2206
+      # https://github.com/actions/runner/issues/3038
       COMMIT_CHANGELOG: true
       DEBUG_ENABLED: false
       PREFERRED_PATCH_APPS: ${{ inputs.PREFERRED_PATCH_APPS }}
