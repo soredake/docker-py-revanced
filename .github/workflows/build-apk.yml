@@ -106,8 +106,8 @@ jobs:
   build-apk:
     uses: ./.github/workflows/build-artifact.yml
     with:
-      COMMIT_CHANGELOG: ${{ inputs.COMMIT_CHANGELOG }}
-      DEBUG_ENABLED: ${{ inputs.DEBUG_ENABLED }}
+      COMMIT_CHANGELOG: ${{ fromJSON(inputs.COMMIT_CHANGELOG) }}
+      DEBUG_ENABLED: ${{ fromJSON(inputs.DEBUG_ENABLED) }}
       PREFERRED_PATCH_APPS: ${{ inputs.PREFERRED_PATCH_APPS }}
     secrets:
       ENVS: ${{ secrets.ENVS }}
