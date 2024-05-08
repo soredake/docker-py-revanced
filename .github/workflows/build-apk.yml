@@ -43,7 +43,7 @@ on:
         default: true
       DEBUG_ENABLED:
         type: boolean
-        description: 'Run the build with tmate debugging enabled.'
+        description: "Run the build with tmate debugging enabled."
         required: false
         default: false
       PREFERRED_PATCH_APPS:
@@ -89,7 +89,7 @@ on:
         default: true
       DEBUG_ENABLED:
         type: boolean
-        description: 'Run the build with tmate debugging enabled.'
+        description: "Run the build with tmate debugging enabled."
         required: false
         default: false
       PREFERRED_PATCH_APPS:
@@ -97,7 +97,7 @@ on:
         required: false
         type: string
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: "*/15 * * * *"
 
 concurrency:
   group: ${{ github.head_ref || github.run_id }}
@@ -106,8 +106,8 @@ jobs:
   build-apk:
     uses: ./.github/workflows/build-artifact.yml
     with:
-      COMMIT_CHANGELOG: ${{ fromJSON(inputs.COMMIT_CHANGELOG) }}
-      DEBUG_ENABLED: ${{ fromJSON(inputs.DEBUG_ENABLED) }}
+      COMMIT_CHANGELOG: true
+      DEBUG_ENABLED: false
       PREFERRED_PATCH_APPS: ${{ inputs.PREFERRED_PATCH_APPS }}
     secrets:
       ENVS: ${{ secrets.ENVS }}
@@ -149,7 +149,7 @@ jobs:
           sleep 10
 
   virustotal-scan:
-    needs: [ upload-to-github ]
+    needs: [upload-to-github]
     uses: nikhilbadyal/ghactions/.github/workflows/virustotal-scan.yml@main
     with:
       FILES: |
@@ -161,7 +161,7 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   upload-to-telegram:
-    needs: [ upload-to-github ]
+    needs: [upload-to-github]
     uses: nikhilbadyal/ghactions/.github/workflows/telegram-uploader.yml@main
     if: inputs.TELEGRAM_NO_ROOT_UPLOAD
     secrets:
@@ -173,7 +173,7 @@ jobs:
       MESSAGE: ${{ secrets.MESSAGE_NON_ROOT }}
 
   upload-to-telegram-root:
-    needs: [ upload-to-telegram ]
+    needs: [upload-to-telegram]
     uses: nikhilbadyal/ghactions/.github/workflows/telegram-uploader.yml@main
     if: inputs.TELEGRAM_ROOT_UPLOAD
     secrets:
@@ -222,7 +222,7 @@ jobs:
   cleanup:
     name: GitHub Cleanup
     if: inputs.CLEANUP
-    needs: [ upload-to-telegram ]
+    needs: [upload-to-telegram]
     uses: ./.github/workflows/github-cleanup.yml
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
