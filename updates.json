@@ -1,1 +1,262 @@
-{}
+{
+    "twitter": {
+        "app_version": "10-46-1-release-0-310461000",
+        "integrations_version": "v1.10.0",
+        "patches_version": "v4.9.0",
+        "cli_version": "v4.6.0",
+        "patches_json_version": "v4.9.0",
+        "ms_epoch_since_patched": 1719093092565,
+        "date_patched": "2024-06-22 21:51:32.564615+05:30",
+        "app_dump": {
+            "app_name": "twitter",
+            "app_version": "10-46-1-release-0-310461000",
+            "experiment": false,
+            "cli_dl": "https://github.com/revanced/revanced-cli",
+            "patches_dl": "https://github.com/revanced/revanced-patches",
+            "integrations_dl": "https://github.com/revanced/revanced-integrations",
+            "patches_json_dl": "https://github.com/revanced/revanced-patches",
+            "exclude_request": [
+                "open-links-with-app-chooser",
+                "dynamic-color",
+                "hide-view-count",
+                "hide-recommended-users"
+            ],
+            "include_request": [],
+            "resource": {
+                "cli": {
+                    "file_name": "d1dd3f8bdff4c4fbedc02f74dc4a853217af9769fcb559fe394d77806114dc55.jar",
+                    "version": "v4.6.0"
+                },
+                "integrations": {
+                    "file_name": "3081809a0b949bae7d388b90bac74b8c8e5a734eb17730e237ddfd973acbb0d8.apk",
+                    "version": "v1.10.0"
+                },
+                "patches": {
+                    "file_name": "1b49bf5727ecc9114de1ee0f62d0b870ae55cad869951474029cac438c124eff.jar",
+                    "version": "v4.9.0"
+                },
+                "patches_json": {
+                    "file_name": "7d02a513454568e0be2345a661785d3c597d46d52917dd6f10fbff88eb291751.json",
+                    "version": "v4.9.0"
+                }
+            },
+            "no_of_patches": 7,
+            "keystore_name": "revanced.keystore",
+            "archs_to_build": [
+                "arm64-v8a",
+                "armeabi-v7a"
+            ],
+            "options_file": "options.json",
+            "download_file_name": "twitter.apk",
+            "download_dl": "https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=6485693&key=6d2478f6740beb860f2774b71b27215f7847daea&forcebaseapk=true",
+            "download_source": "https://www.apkmirror.com/apk/x-corp/twitter/",
+            "package_name": "com.twitter.android",
+            "old_key": true,
+            "space_formatted": true
+        }
+    },
+    "infinity": {
+        "app_version": "7-2-5-172",
+        "integrations_version": "v1.10.0",
+        "patches_version": "v4.9.0",
+        "cli_version": "v4.6.0",
+        "patches_json_version": "v4.9.0",
+        "ms_epoch_since_patched": 1717883501911,
+        "date_patched": "2024-06-08 21:51:41.910993+05:30",
+        "app_dump": {
+            "app_name": "infinity",
+            "app_version": "7-2-5-172",
+            "experiment": false,
+            "cli_dl": "https://github.com/revanced/revanced-cli",
+            "patches_dl": "https://github.com/revanced/revanced-patches",
+            "integrations_dl": "https://github.com/revanced/revanced-integrations",
+            "patches_json_dl": "https://github.com/revanced/revanced-patches",
+            "exclude_request": [],
+            "include_request": [],
+            "resource": {
+                "cli": {
+                    "file_name": "d1dd3f8bdff4c4fbedc02f74dc4a853217af9769fcb559fe394d77806114dc55.jar",
+                    "version": "v4.6.0"
+                },
+                "integrations": {
+                    "file_name": "3081809a0b949bae7d388b90bac74b8c8e5a734eb17730e237ddfd973acbb0d8.apk",
+                    "version": "v1.10.0"
+                },
+                "patches": {
+                    "file_name": "1b49bf5727ecc9114de1ee0f62d0b870ae55cad869951474029cac438c124eff.jar",
+                    "version": "v4.9.0"
+                },
+                "patches_json": {
+                    "file_name": "7d02a513454568e0be2345a661785d3c597d46d52917dd6f10fbff88eb291751.json",
+                    "version": "v4.9.0"
+                }
+            },
+            "no_of_patches": 2,
+            "keystore_name": "revanced.keystore",
+            "archs_to_build": [
+                "arm64-v8a",
+                "armeabi-v7a"
+            ],
+            "options_file": "options.json",
+            "download_file_name": "infinity.apk",
+            "download_dl": "https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=6379099&key=ac96563edfe00e8b8106e6184100ed8741a0b0d4&forcebaseapk=true",
+            "download_source": "https://www.apkmirror.com/apk/docile-alligator/infinity-for-reddit/",
+            "package_name": "ml.docilealligator.infinityforreddit",
+            "old_key": true,
+            "space_formatted": true
+        }
+    },
+    "tumblr": {
+        "app_version": "35-0-0-110-1350000110",
+        "integrations_version": "v1.10.0",
+        "patches_version": "v4.9.0",
+        "cli_version": "v4.6.0",
+        "patches_json_version": "v4.9.0",
+        "ms_epoch_since_patched": 1719093124244,
+        "date_patched": "2024-06-22 21:52:04.244080+05:30",
+        "app_dump": {
+            "app_name": "tumblr",
+            "app_version": "35-0-0-110-1350000110",
+            "experiment": false,
+            "cli_dl": "https://github.com/revanced/revanced-cli",
+            "patches_dl": "https://github.com/revanced/revanced-patches",
+            "integrations_dl": "https://github.com/revanced/revanced-integrations",
+            "patches_json_dl": "https://github.com/revanced/revanced-patches",
+            "exclude_request": [],
+            "include_request": [],
+            "resource": {
+                "cli": {
+                    "file_name": "d1dd3f8bdff4c4fbedc02f74dc4a853217af9769fcb559fe394d77806114dc55.jar",
+                    "version": "v4.6.0"
+                },
+                "integrations": {
+                    "file_name": "3081809a0b949bae7d388b90bac74b8c8e5a734eb17730e237ddfd973acbb0d8.apk",
+                    "version": "v1.10.0"
+                },
+                "patches": {
+                    "file_name": "1b49bf5727ecc9114de1ee0f62d0b870ae55cad869951474029cac438c124eff.jar",
+                    "version": "v4.9.0"
+                },
+                "patches_json": {
+                    "file_name": "7d02a513454568e0be2345a661785d3c597d46d52917dd6f10fbff88eb291751.json",
+                    "version": "v4.9.0"
+                }
+            },
+            "no_of_patches": 6,
+            "keystore_name": "revanced.keystore",
+            "archs_to_build": [
+                "arm64-v8a",
+                "armeabi-v7a"
+            ],
+            "options_file": "options.json",
+            "download_file_name": "tumblr.apk",
+            "download_dl": "https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=6463134&key=3673f891f7ce47bd0c6a1795a01ed7a5e2bc13bb&forcebaseapk=true",
+            "download_source": "https://www.apkmirror.com/apk/tumblr-inc/tumblr/",
+            "package_name": "com.tumblr",
+            "old_key": true,
+            "space_formatted": true
+        }
+    },
+    "pixiv": {
+        "app_version": "6-112-1-46358",
+        "integrations_version": "v1.10.0",
+        "patches_version": "v4.9.0",
+        "cli_version": "v4.6.0",
+        "patches_json_version": "v4.9.0",
+        "ms_epoch_since_patched": 1719093144112,
+        "date_patched": "2024-06-22 21:52:24.111604+05:30",
+        "app_dump": {
+            "app_name": "pixiv",
+            "app_version": "6-112-1-46358",
+            "experiment": false,
+            "cli_dl": "https://github.com/revanced/revanced-cli",
+            "patches_dl": "https://github.com/revanced/revanced-patches",
+            "integrations_dl": "https://github.com/revanced/revanced-integrations",
+            "patches_json_dl": "https://github.com/revanced/revanced-patches",
+            "exclude_request": [],
+            "include_request": [],
+            "resource": {
+                "cli": {
+                    "file_name": "d1dd3f8bdff4c4fbedc02f74dc4a853217af9769fcb559fe394d77806114dc55.jar",
+                    "version": "v4.6.0"
+                },
+                "integrations": {
+                    "file_name": "3081809a0b949bae7d388b90bac74b8c8e5a734eb17730e237ddfd973acbb0d8.apk",
+                    "version": "v1.10.0"
+                },
+                "patches": {
+                    "file_name": "1b49bf5727ecc9114de1ee0f62d0b870ae55cad869951474029cac438c124eff.jar",
+                    "version": "v4.9.0"
+                },
+                "patches_json": {
+                    "file_name": "7d02a513454568e0be2345a661785d3c597d46d52917dd6f10fbff88eb291751.json",
+                    "version": "v4.9.0"
+                }
+            },
+            "no_of_patches": 1,
+            "keystore_name": "revanced.keystore",
+            "archs_to_build": [
+                "arm64-v8a",
+                "armeabi-v7a"
+            ],
+            "options_file": "options.json",
+            "download_file_name": "pixiv.apk",
+            "download_dl": "https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=6460583&key=67cfa74af17defa1f008c0abdaa93b4177e2356b",
+            "download_source": "https://www.apkmirror.com/apk/pixiv-inc/pixiv/",
+            "package_name": "jp.pxv.android",
+            "old_key": true,
+            "space_formatted": true
+        }
+    },
+    "reddit": {
+        "app_version": "2024.17.0",
+        "integrations_version": "v1.10.1",
+        "patches_version": "v4.9.1",
+        "cli_version": "v4.6.1",
+        "patches_json_version": "v4.9.1",
+        "ms_epoch_since_patched": 1719093159017,
+        "date_patched": "2024-06-22 21:52:39.016698+05:30",
+        "app_dump": {
+            "app_name": "reddit",
+            "app_version": "2024.17.0",
+            "experiment": false,
+            "cli_dl": "https://github.com/inotia00/revanced-cli",
+            "patches_dl": "https://github.com/inotia00/revanced-patches",
+            "integrations_dl": "https://github.com/inotia00/revanced-integrations",
+            "patches_json_dl": "https://github.com/inotia00/revanced-patches",
+            "exclude_request": [],
+            "include_request": [],
+            "resource": {
+                "cli": {
+                    "file_name": "9c384aebb3e559204327e7e650ce3a6226477f40c4eb18a0e3b6057e4b9961f7.jar",
+                    "version": "v4.6.1"
+                },
+                "integrations": {
+                    "file_name": "3f6d673b12e5aefd2c3816f971c933e5a36334b245051c800bd269e009109cfa.apk",
+                    "version": "v1.10.1"
+                },
+                "patches": {
+                    "file_name": "3d4a560f1cf02d2384826cc4835c2bacaf998b94404a7871c55b451528649a1a.jar",
+                    "version": "v4.9.1"
+                },
+                "patches_json": {
+                    "file_name": "52313aa7fbb981d9d1341703a95c0b08800d78c109b4795c16acc78a2ce89564.json",
+                    "version": "v4.9.1"
+                }
+            },
+            "no_of_patches": 12,
+            "keystore_name": "revanced.keystore",
+            "archs_to_build": [
+                "arm64-v8a",
+                "armeabi-v7a"
+            ],
+            "options_file": "options.json",
+            "download_file_name": "reddit.apk",
+            "download_dl": "https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=6131308&key=d5808692472aed4fd198407a617139c18b70bcd4&forcebaseapk=true",
+            "download_source": "https://www.apkmirror.com/apk/redditinc/reddit/",
+            "package_name": "com.reddit.frontpage",
+            "old_key": true,
+            "space_formatted": true
+        }
+    }
+}
